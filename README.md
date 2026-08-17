@@ -9,9 +9,8 @@ A personal collection of configuration files (dotfiles) for **Hyprland**, a dyna
 - **Window Manager:** [Hyprland](https://hyprland.org/) (Wayland Compositor)
 - **Status Bar:** Waybar / Custom Bar
 - **App Launcher:** Rofi / Wofi
-- **Notification Daemon:** Dunst / Swaync
-- **Terminal:** Kitty / Alacritty / Foot
-- **Wallpaper Engine:** `hyprpaper` / `swww` / `mpvpaper`
+- **Terminal:** Kitty 
+- **Wallpaper Engine:** `swww`
 
 ---
 
