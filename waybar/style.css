@@ -1,0 +1,240 @@
+@import "colors.css";
+
+* {
+	font-family:
+		"Font Awesome 6 Brands", "Open Sans", "Noto Sans",
+		"Font Awesome 6 Free", sans-serif;
+	font-size: 14px;
+	font-weight: 500;
+	min-height: 0;
+}
+
+window#waybar {
+	background-color: @background;
+	/* border-bottom: 1px solid rba(255, 255, 255, 0.1); */
+	border-radius: 0 0 8px 8px;
+	color: @on_surface;
+	transition-property: background-color;
+	transition-duration: 0.5s;
+}
+
+window#waybar.hidden {
+	opacity: 0.2;
+}
+
+window#waybar.termite {
+	background-color: @surface_bright;
+}
+
+window#waybar.chromium {
+	background-color: @scrim;
+	border: none;
+}
+
+#workspaces {
+	margin: 0;
+	padding: 0 4px;
+	border-radius: 8px;
+	background-color: @surface;
+	transition: all 0.2s;
+}
+
+#workspaces button {
+	padding: 0px 6px;
+	margin: 4px 3px;
+	background-color: @inverse_on_surface;
+	color: @inverse_primary;
+	border: none;
+	border-radius: 8px;
+	min-width: 0;
+	min-height: 0;
+	opacity: 1;
+	font-size: 3px;
+	font-weight: 600;
+}
+
+#workspaces button.active {
+	background-color: @on_secondary_container;
+	color: @on_secondary;
+	border: none;
+}
+
+#workspaces button:hover {
+	background: @primary_fixed;
+	border: none;
+	box-shadow: none;
+}
+
+#workspaces button.focused {
+	background-color: transparent;
+	box-shadow: none;
+}
+
+#workspaces button.urgent {
+	color: @error;
+}
+
+#window {
+	padding: 0 10px;
+	font-weight: 600;
+	color: @on_surface_variant;
+}
+
+#custom-media {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#pulseaudio {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#network {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#battery {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#battery.charging,
+#battery.plugged {
+	color: @tertiary;
+}
+
+#battery.critical:not(.charging) {
+	color: @error;
+	animation-name: blink;
+	animation-duration: 0.5s;
+	animation-timing-function: steps(12);
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+
+@keyframes blink {
+	to {
+		color: @on_surface;
+	}
+}
+
+#clock {
+	padding: 0 12px;
+	font-weight: 500;
+	color: @on_surface;
+}
+
+#tray {
+	padding: 0 10px 0 6px;
+}
+
+#tray > .passive {
+	-gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+	-gtk-icon-effect: highlight;
+	background-color: @error;
+}
+
+#idle_inhibitor {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#idle_inhibitor.activated {
+	color: @tertiary_fixed;
+}
+
+#custom-bluetooth {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#backlight {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#power-profiles-daemon {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#power-profiles-daemon.performance {
+	color: @tertiary;
+}
+
+#power-profiles-daemon.balanced {
+	color: @primary;
+}
+
+#power-profiles-daemon.power-saver {
+	color: @tertiary;
+}
+
+#custom-power {
+	padding: 0 10px 0 6px;
+	color: @on_surface;
+}
+
+#mpris {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#mpd {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#temperature {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#temperature.critical {
+	color: @error;
+}
+
+#memory {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#cpu {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#disk {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#scratchpad {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#language {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+#keyboard-state {
+	padding: 0 10px;
+	color: @on_surface;
+}
+
+tooltip {
+	background: rgba(22, 22, 22, 0.95);
+	border: 1px solid rgba(255, 255, 255, 0.1);
+	border-radius: 8px;
+}
+
+tooltip label {
+	color: @on_surface;
+}
