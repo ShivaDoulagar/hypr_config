@@ -87,10 +87,10 @@ monitor=,preferred,auto,1
 
 | Keybinding | Action |
 |---|---|
-| `SUPER + Q` | Open Terminal |
-| `SUPER + C` | Close Active Window |
+| `SUPER + ENTER` | Open Terminal |
+| `SUPER + Q` | Close Active Window |
 | `SUPER + E` | Open File Manager |
-| `SUPER + R` | Application Launcher |
+| `SUPER + SPACE` | Application Launcher |
 | `SUPER + V` | Toggle Floating Window |
 | `SUPER + M` | Exit / Reload Hyprland |
 
