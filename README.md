@@ -96,11 +96,18 @@ monitor=,preferred,auto,1
 
 ---
 
-## 📄 License
+## change the wallpaper
+```
+    matugen image <path>
+```
 
-Distributed under the MIT License. See `LICENSE` for more information.
+## Images
+![Alt text](./images/1.png)   
+![Alt text](./images/2.png)   
+![Alt text](./images/3.png)
 
----
+
+
 
 ### Tips for customizing this further
 
