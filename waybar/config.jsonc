@@ -62,7 +62,7 @@
         "firefox": "  Firefox",
         "code": "󰨞  VS Code",
         "kitty": "  Kitty",
-        "nautilus": "󰉋  Files"
+        "nautilus": "󰉋 Files"
       }
     },
 
@@ -230,13 +230,7 @@
     "custom/power": {
         "format" : "⏻ ",
 		"tooltip": false,
-		"menu": "on-click",
-		"menu-file": "$HOME/.config/waybar/power_menu.xml", // Menu file in resources folder
-		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
-			"suspend": "systemctl suspend",
-			"hibernate": "systemctl hibernate"
-		}
-    }
+		"on-click":"~/.config/rofi/powermenu/type-4/powermenu.sh"
+
+  }
 }

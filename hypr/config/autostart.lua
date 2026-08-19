@@ -16,7 +16,7 @@ set_wallpaper("/home/shiva/data/arch_files/Wallpapers/car_on_mars.jpg")
 
 hl.on("hyprland.start", function()
 	hl.exec_cmd("nm-applet")
-	hl.exec_cmd("swww-daemon")
+	hl.exec_cmd("awww-daemon")
 	hl.exec_cmd("waybar & hyprpaper")
 	set_wallpaper("/home/shiva/data/arch_files/Wallpapers/astronaut2.png")
 end)
